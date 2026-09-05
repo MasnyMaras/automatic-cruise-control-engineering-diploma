@@ -2,16 +2,6 @@
 DISTANCE CALIBRATION - measurement at 10 cm (100 mm)
 Place the band EXACTLY 100 mm from the camera lens, facing it
 (55 mm side horizontal), then run this script.
- 
-The script:
-  - detects the colored band (same HSV range as ACC),
-  - measures the bounding box width 'w' in pixels,
-  - averages many frames for a stable result,
-  - on 'z' prints the ready-to-use constant DIST_CONST.
- 
-Keys:
-  z  -> save the averaged reading and compute the constant
-  q  -> quit
 """
  
 import numpy as np
